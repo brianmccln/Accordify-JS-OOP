@@ -53,7 +53,8 @@ body {
     /* max-height: 0 instead of display none, 
     to animate height expanding */
     height: 0; 
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-y: auto;
     /* change to max-height takes 0.5 seconds,
     which gives the animation effect */
     transition: height 0.3s ease-out;
@@ -67,4 +68,8 @@ body {
 .accordify button:hover, .btn-hilite {
     /* reverse accordion button colors on mouseover or click */
     filter: invert();
+}
+
+p {
+    font-family: serif;
 }
